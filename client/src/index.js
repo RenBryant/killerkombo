@@ -5,10 +5,10 @@ import './index.css';
 import App from './App.jsx';
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  // </React.StrictMode>,
+  // document.getElementById('root')
 );
 
 
