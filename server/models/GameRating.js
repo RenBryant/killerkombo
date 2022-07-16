@@ -18,5 +18,6 @@ const GameRatingSchema = newSchema ({
   },
 });
 
-module.exports =
-  mongoose.models.GameRating || mongoose.model('GameRating', GameRatingSchema)
+const GameRating = mongoose.model('GameRating', GameRatingSchema);
+
+module.exports = GameRating;
