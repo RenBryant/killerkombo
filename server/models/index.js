@@ -1,3 +1,4 @@
 const User = require('./User');
+const GameRating = require('./GameRating');
 
-module.exports = { User };
+module.exports = { User, GameRating };
