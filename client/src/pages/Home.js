@@ -1,15 +1,16 @@
-import React from "react";
-import ProductList from "../components/ProductList";
-import CategoryMenu from "../components/CategoryMenu";
-import Cart from "../components/Cart";
+import React from 'react';
+
+import Auth from '../utils/auth';
+import { useQuery } from '@apollo/client';
 
 const Home = () => {
+
+
+  const loggedIn = Auth.loggedIn();
+
   return (
-    <div className="container">
-      <CategoryMenu />
-      <ProductList />
-      <Cart />
-    </div>
+    <main>
+    </main>
   );
 };
 
