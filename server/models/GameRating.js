@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const GameRatingSchema = {
+const GameRatingSchema = newSchema ({
   game_id: {
     type: Number,
     unique: true,
@@ -16,7 +16,7 @@ const GameRatingSchema = {
     max: 5,
     default: 0,
   },
-}
+});
 
 module.exports =
   mongoose.models.GameRating || mongoose.model('GameRating', GameRatingSchema)
