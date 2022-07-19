@@ -45,4 +45,15 @@ module.exports = function (app) {
     }    
     )
 
+    app.get("/api/search/:game", (req, res) => {
+        axios.get("https://api.rawg.io/api/games?search=" + req.params.game + '&key=' + API_KEY).then(results => {
+            let data = results.data
+            res.json(data)
+        }).catch(err => {
+            res.json(err)
+        }
+    )
+    }
+    )
+
 };

@@ -8,11 +8,11 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TopGames from "./TopGames";
 import Search from "./Search";
 import Nav from "./Nav";
-import GameDetail from "./GameDetail";
+import GameDetail from "./GameDetails";
+import Home from './pages/Home';
 
 
 const httpLink = createHttpLink({
@@ -41,6 +41,7 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
+          <Route exact path='/' component={Home} />
           <Route exact path='/topgames' component={TopGames} />
           <Route exact path='/search' component={Search} />
           <Route path='/game/:name' component={GameDetail} />

@@ -15,7 +15,7 @@ const Search = () => {
     let slug = searchTerm.split(' ').join('-').toLowerCase()
 
     setGameResults([])
-    fetch(`https://rawg.io/api/games?search=${slug}`)
+    fetch(`/api/search/${slug}`)
     .then(resp => resp.json())
     .then(({results}) => {
       results === undefined ? alert('no games found') : setGameResults(results)

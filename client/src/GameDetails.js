@@ -1,3 +1,4 @@
+import React from "react";
 const GameDetail = (props) => {
 
     const { game } = props.location.gameProps
