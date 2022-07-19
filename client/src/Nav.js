@@ -9,6 +9,7 @@ const Nav = () => {
 
   return (
     <nav>
+      <p className='text-3xl font-bold underline'>Test</p>
       <ul className='nav-links'>
       <Link style={navStyle} to={'/login'}>
         <li>Login</li>
