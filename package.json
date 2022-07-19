@@ -23,6 +23,7 @@
       "react-app/jest"
     ]
   },
+<<<<<<< HEAD
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,5 +35,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenBryant/killerkombo/issues"
+  },
+  "homepage": "https://github.com/RenBryant/killerkombo#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+>>>>>>> c756da3705799d4461618c631d056b6a7f22ab5d
   }
 }

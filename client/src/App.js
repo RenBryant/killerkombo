@@ -8,7 +8,12 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import LandingPage from './pages/LandingPage';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import TopGames from "./TopGames";
+import Search from "./Search";
+import Nav from "./Nav";
+import GameDetail from "./GameDetail";
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -32,23 +37,16 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Router>
-        <div>
-          <LandingPage />
-          {/* <StoreProvider> */}
-          
-            {/* <Switch> */}
-              {/* <Route exact path="/" component={Home} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/signup" component={Signup} />
-              <Route exact path="/success" component={Success} />
-              <Route exact path="/orderHistory" component={OrderHistory} />
-              <Route exact path="/products/:id" component={Detail} />
-              <Route component={NoMatch} /> */}
-            {/* </Switch> */}
-          {/* </StoreProvider> */}
-        </div>
-      </Router>
+     <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route exact path='/topgames' component={TopGames} />
+          <Route exact path='/search' component={Search} />
+          <Route path='/game/:name' component={GameDetail} />
+        </Switch>
+      </div>
+    </Router>
     </ApolloProvider>
   );
 }
