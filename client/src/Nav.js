@@ -10,6 +10,12 @@ const Nav = () => {
   return (
     <nav>
       <ul className='nav-links'>
+      <Link style={navStyle} to={'/login'}>
+        <li>Login</li>
+        </Link>
+        <Link style={navStyle} to={'/logout'}>
+        <li>Logout</li>
+        </Link>
         <Link style={navStyle} to={'/topgames'}>
         <li>Top Games</li>
         </Link>
