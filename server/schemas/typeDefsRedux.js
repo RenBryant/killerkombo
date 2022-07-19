@@ -38,6 +38,26 @@ const typeDefs = gql`
     token: ID
     user: User
   }
+  # Both the type Game and Genre need to be refactored to... 
+  # ...include the keys to be return depending on the query.
+  # =======================================================
+  type Game {
+    id: ID
+    name: String
+  }
+  type Genre {
+    id: ID
+    name: String
+  }
+  # =======================================================
+
+  # WORKING TYPE DEFINITION
+  # =======================================================
+  type People {
+    id: ID
+    name: String
+  }
+  # =======================================================
 
   type Query {
     categories: [Category]
@@ -46,6 +66,15 @@ const typeDefs = gql`
     user: User
     order(_id: ID!): Order
     checkout(products: [ID]!): Checkout
+    getAllGames: [Game]
+    getGameById(id: ID!): [Game]
+    getGenres:[Genre]
+    getGenreById(id: ID!): [Genre]
+    getGamesBySearch(game: String!): [Game]
+    # WORKING QUERY
+    # =======================================================
+    getPeople: [People]
+    # =======================================================
   }
 
   type Mutation {
