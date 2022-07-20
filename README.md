@@ -2,7 +2,7 @@
 
 ## Description
 
-This application allows the user to search for games and view the image, description, genre and more. The homepage will show the user the current top ten games. Then the user can log in or create an account. 
+This application allows the user to search for video games and view the image, description, genre and more. The homepage will show the user the current top ten games. Then the user can log in or create an account. The user will be able to save games, delete games, and comment on what they thought about the game. Expand your Gaming Experience with KillerKombo today! 
 
 ## Table of Contents
 
@@ -61,7 +61,7 @@ The root of our application uses concurrently which allows the front-end and bac
 
 ## Contribute
 
-    The contributors for this application are:
+The contributors for this application are:
     - [Emmanuel6093](https://github.com/Emmanuel6093)
     - [AllenM03](https://github.com/AllenM03)
     - [RenBryant](https://github.com/RenBryant)
