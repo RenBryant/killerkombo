@@ -32,33 +32,21 @@ const TopGames = () => {
   //   }
   //   </ul>
   // </div>
-  
-  const gameURL = name => {
-    const str = name.split(" ");
-    let result = [];
-    
-    str.forEach((word, index) => {
-      word.replace(/[^a-zA-Z0-9 ]/g, '');
-      console.log(word);
-      result.push(word);
-    });
-
-    let globalURL = "https://rawg.io/games/";
-
-    return globalURL + result.join("-");
-  }
-
-
   return (
     <>
     <div class="container mx-auto grid grid-cols-4 gap-4 mt-6 mb-6">
       {
         games.map(game => (
-          <div>
-            <a href={gameURL(game.name)} target="_blank">
+          <div key={game.id}>
+             <Link to={{
+              pathname: `/GameDetails/${game.name.split(" ").join("-")}`,
+              gameProps:{
+                game: game
+              }
+            }}>
               <h3>{game.name}</h3>
               <img src={game.background_image} alt="game"  />
-            </a>
+              </Link>
           </div>
         ))
       }
