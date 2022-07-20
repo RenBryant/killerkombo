@@ -2,8 +2,7 @@ import React from 'react';
 
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
-import Nav from '../Nav';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
  // <main className='min-h-screen flex flex-col justify-between'>
     //   <section className='page flex-1 flex-col gap-10 lg:flex-row justify-around items-center'>
     //     <section className='text-text space-y-5 text-center 2xl:text-left'>
@@ -30,19 +29,17 @@ const Home = () => {
         </div>
   
         <div className="lg:py-24">
-          <h2 className="text-3xl font-bold sm:text-4xl text-white">Grow your audience</h2>
+          <h2 className="text-6xl font-bold sm:text-4xl text-white">KillerKombo</h2>
   
           <p className="mt-4 text-white">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-            atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-            veniam tempora deserunt? Molestiae eius quidem quam repellat.
+            Get the best games in one place!
           </p>
   
           <a
             className="inline-flex items-center px-8 py-3 mt-8 text-white bg-indigo-600 border border-indigo-600 rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring"
-            href="/get-started"
+            href="/login"
           >
-            <span className="text-sm font-medium"> Get Started </span>
+            <span className="text-sm font-medium"> Grab your controller </span>
           <div>
           
           </div>

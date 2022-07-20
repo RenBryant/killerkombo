@@ -4,7 +4,7 @@ const {ApolloServer} = require('apollo-server-express');
 const path = require('path');
 
 const routes = require('./routes/rawgRoutes');
-console.log(routes)
+// console.log(routes)
 
 const {typeDefs, resolvers} = require('./schemas');
 const {authMiddleware} = require('./utils/auth');
