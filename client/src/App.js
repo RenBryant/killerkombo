@@ -15,8 +15,8 @@ import GameDetail from "./GameDetails";
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-
 import './index.css';
+import Footer from './pages/Footer';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -44,16 +44,17 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-          {/* <Route path='/home' element={Home} /> */}
           <Route exact path='/' component={Home} />
           <Route path='/login' component={Login} />
           <Route path='/signup' component={Signup} />
           <Route exact path='/topgames' component={TopGames} />
           <Route exact path='/search' component={Search} />
-          <Route path='/game/:name' component={GameDetail} />
+          <Route path='/gamedetails/:name' component={GameDetail} />
         </Switch>
+        < Footer />
       </div>
     </Router>
+    
     </ApolloProvider>
   );
 }
