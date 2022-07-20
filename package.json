@@ -4,8 +4,8 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "test": "echo "Error: no test specified" && exit 1",
+    "develop": "concurrently "cd server && npm run watch" "cd client && npm start"",
     "start": "server/server.js"
   },
   "repository": {
