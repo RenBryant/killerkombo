@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
+const { Schema } = require('mongoose');
 
-const GameRatingSchema = newSchema ({
+const GameRatingSchema = new Schema ({
   game_id: {
     type: Number,
     unique: true,

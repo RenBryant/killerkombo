@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const { Schema } = require('mongoose');
 
-const GameSchema = newSchema ({
+const GameSchema = new Schema ({
     id: {
         type: Number,
         unique: true,

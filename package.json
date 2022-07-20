@@ -12,10 +12,16 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+<<<<<<< HEAD
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "start": "server/server.js"
+=======
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+>>>>>>> f6b932561b00baa08057c909a6af32c30fb5e05b
   },
   "eslintConfig": {
     "extends": [
@@ -23,6 +29,16 @@
       "react-app/jest"
     ]
   },
+<<<<<<< HEAD
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenBryant/killerkombo/issues"
+  },
+  "homepage": "https://github.com/RenBryant/killerkombo#readme",
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+=======
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,5 +50,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+>>>>>>> f6b932561b00baa08057c909a6af32c30fb5e05b
   }
 }

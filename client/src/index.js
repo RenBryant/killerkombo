@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-// import  './tailwind.config';
-import App from './App.jsx';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals.js";
 
-ReactDOM.render(
-  // <React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
     <App />
-  // </React.StrictMode>,
-  // document.getElementById('root')
+  </React.StrictMode>
 );
 
-
+reportWebVitals();
