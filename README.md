@@ -63,7 +63,7 @@ The root of our application uses concurrently which allows the front-end and bac
 
 ## Contribute
 
-    The contributors for this application are:
+The contributors for this application are:
     - [Emmanuel6093](https://github.com/Emmanuel6093)
     - [AllenM03](https://github.com/AllenM03)
     - [RenBryant](https://github.com/RenBryant)
