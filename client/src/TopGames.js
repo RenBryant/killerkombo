@@ -1,86 +1,58 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'
-
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const TopGames = () => {
-
   useEffect(() => {
-    fetchGames()
-  },[])
+    fetchGames();
+  }, []);
 
-  const [games, setGames] = useState([])
+  const [games, setGames] = useState([]);
 
   const fetchGames = () => {
-    fetch('https://rawg.io/api/collections/must-play/games')
-    .then(resp => resp.json())
-    .then(({results}) => setGames(results))
-  }
-    // <div>
-    //   <ul>
-    //   {
-    //     games.map(game => (
-    //       <li key={game.id}>
-    //         <Link to={{
-    //             pathname: `/game/${game.name}`,
-    //             gameProps:{
-    //               game: game
-    //             }
-    //           }}>
-    //         <h3>{game.name}</h3>
-    //         <img src={game.background_image} alt="game"/>
-    //         </Link>
-    //       </li>
-    //     ))
-    //   }
-    //   </ul>
-    // </div>
+    fetch("https://rawg.io/api/collections/must-play/games")
+      .then((resp) => resp.json())
+      .then(({ results }) => setGames(results));
+  };
+  // <div>
+  //   <ul>
+  //   {
+  //     games.map(game => (
+  //       <li key={game.id}>
+  //         <Link to={{
+  //             pathname: `/game/${game.name}`,
+  //             gameProps:{
+  //               game: game
+  //             }
+  //           }}>
+  //         <h3>{game.name}</h3>
+  //         <img src={game.background_image} alt="game"/>
+  //         </Link>
+  //       </li>
+  //     ))
+  //   }
+  //   </ul>
+  // </div>
   return (
-<>
-<div class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-6 gap-8">
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                </div>
-                <div class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-6 gap-8">
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                </div>
-                <div class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-6 gap-8">
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                    <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
-                    {/* <!-- Remove class [ h-24 ] when adding a card block --> */}
-                    {/* <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border --> */}
-                </div>
-            
-            
-</>
-  )
-}
+    <>
+    <div class="container mx-auto grid grid-cols-4 gap-4 mt-6 mb-6">
+      {
+        games.map(game => (
+          <div key={game.id}>
+             <Link to={{
+              pathname: `/GameDetails/${game.name.split(" ").join("-")}`,
+              gameProps:{
+                game: game
+              }
+            }}>
+              <h3>{game.name}</h3>
+              <img src={game.background_image} alt="game"  />
+              </Link>
+          </div>
+        ))
+      }
+      </div>
+    </>
+  );
+};
 
 export default TopGames;

@@ -13,7 +13,7 @@ const Nav = () => {
         <div className="md:flex md:items-center md:gap-14">
           <a className="block text-teal-300" href="/">
             <span className="sr-only">Home</span>
-       <img src='public/favicon.ico'>
+       <img src='/favicon.ico'>
               
          </img>   
           </a>

@@ -49,7 +49,7 @@ function App() {
           <Route path='/signup' component={Signup} />
           <Route exact path='/topgames' component={TopGames} />
           <Route exact path='/search' component={Search} />
-          <Route path='/game/:name' component={GameDetail} />
+          <Route path='/gamedetails/:name' component={GameDetail} />
         </Switch>
         < Footer />
       </div>

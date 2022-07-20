@@ -2,7 +2,6 @@ import React from 'react';
 
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
-import Card from './Card';
 import Nav from '../Nav';
 import { Link } from 'react-router-dom';
  // <main className='min-h-screen flex flex-col justify-between'>
