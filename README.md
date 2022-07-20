@@ -1,5 +1,3 @@
-# KillerKombo
-
 # KILLERKOMBO
 
 ## Description
