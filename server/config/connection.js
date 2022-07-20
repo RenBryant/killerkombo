@@ -5,6 +5,12 @@ mongoose.connect(
   {
     useNewUrlParser: true, 
     useUnifiedTopology: true,
+  }, function(err) {
+    if (err) {
+      console.log(err);
+    }
+    // mongoose.connection.db.dropDatabase();
+    // console.log('dropped')
   }
 );
 

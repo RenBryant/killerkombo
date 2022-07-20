@@ -5,12 +5,11 @@ function Footer() {
 <footer class="bg-gray-100">
   <div class="max-w-5xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
     <div class="flex justify-center text-teal-600">
-    <img src='/favicon.ico'/>
+    <img src='/favicon.ico' alt='remote control' />
     </div>
 
     <p class="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-500">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-      consequuntur amet culpa cum itaque neque.
+    Get the best games in one place!
     </p>
 
     <nav class="mt-12" aria-labelledby="footer-navigation">

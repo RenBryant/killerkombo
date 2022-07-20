@@ -13,7 +13,7 @@ const Nav = () => {
         <div className="md:flex md:items-center md:gap-14">
           <a className="block text-teal-300" href="/">
             <span className="sr-only">Home</span>
-       <img src='/favicon.ico'>
+       <img src='/favicon.ico' alt='remote control'>
               
          </img>   
           </a>
@@ -27,7 +27,7 @@ const Nav = () => {
               
               <Link style={navStyle} to={'/topgames'}>
               <li>
-                <a className="text-white transition hover:text-white/75">
+                <a className="text-white transition hover:text-white/75" href='/'>
                   Top Games
                 </a>
               </li>
@@ -35,20 +35,20 @@ const Nav = () => {
   
               <Link style={navStyle} to={'/search'}>
               <li>
-                <a className="text-white transition hover:text-white/75">
+                <a className="text-white transition hover:text-white/75" href='/'>
                   Search
                 </a>
               </li>
               </Link>
   
               <li>
-                <a className="text-white transition hover:text-white/75">
+                <a className="text-white transition hover:text-white/75" href='/'>
                   About
                 </a>
               </li>
   
               <li>
-                <a className="text-white transition hover:text-white/75">
+                <a className="text-white transition hover:text-white/75" href='/'>
               Contact
                 </a>
               </li>

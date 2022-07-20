@@ -16,7 +16,7 @@ const savedGamesSchema = new Schema({
     },
     username:{
         type:String,
-        required:true
+        // required:true
     },
     date: {
         type: Date,
