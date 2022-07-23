@@ -98,7 +98,7 @@ const resolvers = {
         },
         getTopGames: async (parent, args, context) => {
             const { data: { results } } = await get(`https://rawg.io/api/collections/must-play/games?key=` + API_KEY)
-            const gameData = results.map(({ name, background_image, released, rating, genres, platforms, short_screenshots }) => ({ name, background_image, released, rating, genres, platforms, short_screenshots }))
+            const gameData = results.map(({/* destructure results */ }) => ({/* make object of data to return */ }))
             return gameData
         },
         getGameById: async (parent, { id }, context) => {

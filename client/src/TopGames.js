@@ -55,4 +55,10 @@ const TopGames = () => {
   );
 };
 
+// import { QUERY_THOUGHTS, QUERY_ME_BASIC } from '../utils/queries';
+
+// const Home = () => {
+//   const { loading, data } = useQuery(QUERY_THOUGHTS);
+//   const { data: userData } = useQuery(QUERY_ME_BASIC);
+
 export default TopGames;
