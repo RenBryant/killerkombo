@@ -1,11 +1,12 @@
 import React from 'react'
+import favicon from "../assets/favicon.ico";
 
 function Footer() {
   return (
 <footer class="bg-gray-100">
   <div class="max-w-5xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
     <div class="flex justify-center text-teal-600">
-    <img src='/favicon.ico' alt='remote control' />
+    <img src={favicon} alt='remote control' />
     </div>
 
     <p class="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-500">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import favicon from "./assets/favicon.ico";
 const Nav = () => {
 
   const navStyle = {
@@ -13,7 +14,7 @@ const Nav = () => {
         <div className="md:flex md:items-center md:gap-14">
           <a className="block text-teal-300" href="/">
             <span className="sr-only">Home</span>
-       <img src='/favicon.ico' alt='remote control'>
+       <img src= {favicon} alt='remote control'>
               
          </img>   
           </a>
