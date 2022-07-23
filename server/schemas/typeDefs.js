@@ -42,20 +42,23 @@ const typeDefs = gql`
   type Game {
     id: ID
     name: String
+    background_image: String
+    released: String
+    rating: String
+    genres: [Genre]
+    platforms: [Platform]
+    short_screenshots: [Screenshots]
+  }
+  type Screenshots {
+    image: String
   }
   type Genre {
     id: ID
     name: String
   }
-  # =======================================================
-
-  # WORKING TYPE DEFINITION
-  # =======================================================
-  type People {
-    id: ID
+  type Platform {
     name: String
   }
-  # =======================================================
 
   type Query {
     categories: [Category]
@@ -69,6 +72,7 @@ const typeDefs = gql`
     getGenres:[Genre]
     getGenreById(id: ID!): [Genre]
     getGamesBySearch(game: String!): [Game]
+    getTopGames: [Game]
     # WORKING QUERY
     # =======================================================
     getPeople: [People]

@@ -15,7 +15,7 @@ This application allows the user to search for video games and view the image, d
 
 ## Image of Application
 
-![Image of KillerKombo application](./)
+![Image of KillerKombo application](./client/src/assets/KillerKombo.jpg)
 
 ## Deployed Links
 
@@ -23,7 +23,7 @@ GitHib Pages:
 [KillerKombo Application](https://renbryant.github.io/killerkombo/)
 
 Heroku:
-[KillerKombo Heroku Application](https://killerkombos.herokuapp.com/)
+[KillerKombo Heroku Application](https://killer-kombos.herokuapp.com/)
 
 ## Installation
 

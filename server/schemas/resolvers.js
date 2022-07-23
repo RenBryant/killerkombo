@@ -96,6 +96,11 @@ const resolvers = {
             const gameData = results.map(({/* destructure results */ }) => ({/* make object of data to return */ }))
             return gameData
         },
+        getTopGames: async (parent, args, context) => {
+            const { data: { results } } = await get(`https://rawg.io/api/collections/must-play/games?key=` + API_KEY)
+            const gameData = results.map(({ name, background_image, released, rating, genres, platforms, short_screenshots }) => ({ name, background_image, released, rating, genres, platforms, short_screenshots }))
+            return gameData
+        },
         getGameById: async (parent, { id }, context) => {
             const { data: { results } } = await get(`https://api.rawg.io/api/games/${id}?key=` + API_KEY)
             const gameData = results.map(({/* destructure results */ }) => ({/* make object of data to return */ }))
@@ -116,14 +121,6 @@ const resolvers = {
             const searchData = results.map(({/* destructure results */ }) => ({/* make object of data to return */ }))
             return searchData
         },
-        // WORKING EXAMPLE
-        // ================================================
-        getPeople: async (parent, args, context) => {
-            const { data: { results } } = await get('https://randomuser.me/api/?results=5')
-            const peopleData = results.map(({ name: { first, last }, login: { uuid } }) => ({ id: uuid, name: `${first} ${last}` }))
-            return peopleData
-        },
-        // ================================================
     },
     Mutation: {
         addUser: async (parent, args) => {
