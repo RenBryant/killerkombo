@@ -1,5 +1,8 @@
 {
   "name": "killerkombo",
+  "engine": {
+    "npm": "8.x"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "postcss.config.js",
