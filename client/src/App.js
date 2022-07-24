@@ -11,6 +11,8 @@ import { setContext } from '@apollo/client/link/context';
 import TopGames from "./TopGames";
 import Search from "./Search";
 import Nav from "./Nav";
+import Contact from './Contact';
+import About from './About'
 import GameDetail from "./GameDetails";
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -49,6 +51,8 @@ function App() {
           <Route path='/signup' component={Signup} />
           <Route exact path='/topgames' component={TopGames} />
           <Route exact path='/search' component={Search} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/contact' component={Contact} />
           <Route path='/gamedetails/:name' component={GameDetail} />
         </Switch>
         < Footer />
